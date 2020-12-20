@@ -1,6 +1,6 @@
 <?
 $name = 'Михаил';
-$age = '19';
+$age = 19;
 ?>
 <!doctype html>
 <html lang="en">
