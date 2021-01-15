@@ -20,8 +20,11 @@ foreach ($str as $value) {
 </head>
 <body>
     <select>
-        <option style="background-color: <?echo "$ans[0]";?>;">Цвет из style.css</option>
-        <option style="background-color: <?echo "$ans[1]";?>;">Цвет из style.css</option>
+        <?
+        foreach ($ans as $temp){
+            echo "<option style='background-color: $temp;'>Цвет из style.css</option>";
+        }
+        ?>
     </select>
 </body>
 </html>
