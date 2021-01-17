@@ -1,12 +1,12 @@
 <?
-    session_start();
-    $temp = $_POST['ans1'];
-    echo "Ответ на тест 1: $temp" . "<br>";
-    echo "Верный ответ 4" . "<br>";
-    $_SESSION['ans1'] = $temp;
+session_start();
+if(isset($_REQUEST['ans2'])){
+    $_SESSION['ans2']=$_REQUEST['ans2'];
+    header("Location /W/domains/php.ru/task3.php");
+}
 ?>
 Сколько будет 3+3?<br>
-<form method="post" action="task3.php">
+<form method="post" >
     <input name="ans2" type="text">
     <input type="submit">
 </form>
